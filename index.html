@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNAKE GAME</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="start-container">
+      <button class="btn" onClick="startGame()">Start</button>
+      <button class="btn" onClick="stopGame()">Stop</button>
+      
+    </div>
+    <canvas width="400" height="400" id="game" class="canvas">
+    </canvas>
+    <div class="actions">
+      <div class="controls">
+        <button onClick="up()" class="btn up">UP</button>
+        <button onClick="down()" class="btn down">DOWN</button>
+        <button onClick="left()" class="btn left">LEFT</button>
+        <button onClick="right()" class="btn right">RIGHT</button>
+      </div>
+    </div>
+  </div>
+  <img width="16" height="16" src="https://images.vexels.com/media/users/3/141053/isolated/lists/ff6bf2a9bd3f3dcad0af0c1a2b756aa1-realistic-apple.png" style="display:none" id="apple">
+  <script src="index.js"></script>
+</body>
+</html>
